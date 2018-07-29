@@ -19,7 +19,7 @@ class SearchExpenses extends StatefulWidget {
 
 class _SearchExpensesState extends State<SearchExpenses> {
   final User user;
-  DateTime startDate = new DateTime(1999, 1, 1);
+  DateTime startDate= new DateTime(2018, 1, 1);
   DateTime endDate = new DateTime.now();
 
   _SearchExpensesState(this.user);
@@ -51,7 +51,7 @@ class _SearchExpensesState extends State<SearchExpenses> {
           children: <Widget>[
             DatePicker(
               decoration: InputDecoration(
-                labelText: 'Date',
+                labelText: 'Start Date',
                 fillColor: Colors.grey[150],
                 filled: true,
               ),
@@ -68,7 +68,7 @@ class _SearchExpensesState extends State<SearchExpenses> {
             ),
             DatePicker(
               decoration: InputDecoration(
-                labelText: 'Date',
+                labelText: 'End Date',
                 fillColor: Colors.grey[150],
                 filled: true,
               ),
